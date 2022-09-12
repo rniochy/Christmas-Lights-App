@@ -3,8 +3,13 @@ const play = document.getElementById('play')
 const stop = document.getElementById('stop')
 const btn = document.getElementById('submit')
 const title = document.getElementById('title')
+const circles = document.getElementById('circle_content');
 var len = circle.length;
 
+
+const circleAddBackgoundColor = () => { 
+
+}
 const on = function() {
   for (var i = 0; i < len; i++) {
     circle[i].removeAttribute("style");

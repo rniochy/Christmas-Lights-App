@@ -87,7 +87,7 @@
     align-items: center;
   }
 
-  .circle_content {
+  #circle_content {
      display: flex;
   }
   
@@ -161,7 +161,7 @@
   @keyframes glow-1 {
     0%,
     100% {
-      box-shadow: 0 0 20px 5px #c0392b;
+      box-shadow: 0 0 20px 5px #2AFA00;
     }
     50% {
       box-shadow: none;
