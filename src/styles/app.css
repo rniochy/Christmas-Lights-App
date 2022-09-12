@@ -156,12 +156,10 @@
     animation: glow-4 1000ms infinite ;
   }
   
-  
-  
   @keyframes glow-1 {
     0%,
     100% {
-      box-shadow: 0 0 20px 5px #2AFA00;
+      box-shadow: 0 0 20px 5px #c0392b;
     }
     50% {
       box-shadow: none;
