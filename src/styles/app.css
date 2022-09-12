@@ -86,6 +86,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  .circle_content {
+     display: flex;
+  }
   
   .circle {
     display: flex;
