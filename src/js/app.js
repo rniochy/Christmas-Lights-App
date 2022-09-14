@@ -13,9 +13,10 @@ const addRow = (e) => {
     var newInput = document.createElement('input');
     newInput.type = "color";
     newDiv.className = `circle color${i}`;
-    newInput.className = `picker color-change${i}`;
+    newInput.className = `picker`;
+    newInput.setAttribute('onchange', `alert(${i})`);
     circles.appendChild(newDiv);
-    circles.appendChild(newInput);
+    newDiv.appendChild(newInput);
   }
     
 }

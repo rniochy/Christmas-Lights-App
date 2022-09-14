@@ -157,8 +157,7 @@
   }
   .picker { 
      position: absolute;
-     top: 6rem;
-     
+     top: 4rem;
   }
 
   @keyframes glow-1 {
