@@ -155,7 +155,7 @@
     background-color: #2ecc71;
     animation: glow-4 1000ms infinite ;
   }
-  #picker { 
+  .picker { 
      position: absolute;
      top: 4rem;
   }
