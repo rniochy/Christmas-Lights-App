@@ -7,11 +7,15 @@ const row_quantity_button = document.getElementById('row_quantity_button')
 const circles = document.getElementById('circle_content');
 var len = circle.length;
 
-const addRow = () => {
-  for(let i=0; i< document.getElementById('row_quantity').value; i++){
+const addRow = (e) => {
+  for(let i=1; i<=document.getElementById('row_quantity').value; i++){
     var newNode = document.createElement('div');
-    newNode.className = "circle";
+    var newInput = document.createElement('input');
+    newInput.type = "color";
+    newNode.className = `circle color${i}`;
+    newInput.id = `color-chance${i}`;
     circles.appendChild(newNode);
+    circles.appendChild(newInput);
   }
     
 }
@@ -25,7 +29,6 @@ const on = function() {
 
 const off = function() {
   title.style.animation = "none";
-
   for (var i = 0; i < len; i++) {
     circle[i].style.animation = "none";
     circle[i].style.background = "#563260";
@@ -42,4 +45,3 @@ function convert() {
 row_quantity_button.addEventListener('click', addRow)
 play.addEventListener('click', on);
 stop.addEventListener('click', off);
-createAmountOfCircles();

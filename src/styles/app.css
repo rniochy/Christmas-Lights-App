@@ -155,7 +155,11 @@
     background-color: #2ecc71;
     animation: glow-4 1000ms infinite ;
   }
-  
+  #color-chance1 {
+    height: 50px;
+    width: 300px;
+  }
+
   @keyframes glow-1 {
     0%,
     100% {
