@@ -59,6 +59,6 @@ function convert() {
   }
 }
 
-row_quantity_button.addEventListener('click', addRow)
+row_quantity_button.addEventListener('click', addRow);
 play.addEventListener('click', on);
 stop.addEventListener('click', off);
