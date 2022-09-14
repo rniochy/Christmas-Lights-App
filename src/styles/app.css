@@ -1,5 +1,11 @@
 :root {
-  --change: red;
+  --change1: red;
+  --change2: red;
+  --change3: red;
+  --change4: red;
+  --change5: red;
+  --change6: red;
+  --change7: red;
 }
 
 * {
@@ -140,67 +146,73 @@
     border: none;
   }
   
-  /* .red {
-    background-color: #c0392b;
-    animation: glow-1 1s infinite;
-  }
-  
-  .yellow {
-    background-color: #f1c40f;
-    animation: glow-2 1s infinite;
-  }
-  
-  .blue {
-    background-color: #64fcfe;
-    animation: glow-3 1s infinite;
-  }
-  
-  .green {
-    background-color: #2ecc71;
-    animation: glow-4 1000ms infinite ;
-  } */
   .picker { 
      position: absolute;
      top: 4rem;
   }
+  
 
-  /* @keyframes glow-1 {
+  @keyframes glow-7 {
     0%,
     100% {
-      box-shadow: 0 0 20px 5px #c0392b;
+      box-shadow: none;
     }
     50% {
-      box-shadow: none;
+      box-shadow: 0 0 20px 5px var(--change7);
     }
   }
-  
-  @keyframes glow-2 {
+  @keyframes glow-6 {
     0%,
     100% {
       box-shadow: none;
     }
     50% {
-      box-shadow: 0 0 20px 5px #f1c40f;
+      box-shadow: 0 0 20px 5px var(--change6);
     }
   }
-  
-  @keyframes glow-3 {
+  @keyframes glow-5 {
     0%,
     100% {
-      box-shadow: 0 0 20px 5px #74f7e1;
-    }
-    50% {
       box-shadow: none;
     }
-  } */
-  
+    50% {
+      box-shadow: 0 0 20px 5px var(--change5);
+    }
+  }
   @keyframes glow-4 {
     0%,
     100% {
       box-shadow: none;
     }
     50% {
-      box-shadow: 0 0 20px 5px var(--change);
+      box-shadow: 0 0 20px 5px var(--change4);
+    }
+  }
+  @keyframes glow-3 {
+    0%,
+    100% {
+      box-shadow: none;
+    }
+    50% {
+      box-shadow: 0 0 20px 5px var(--change3);
+    }
+  }
+  @keyframes glow-2 {
+    0%,
+    100% {
+      box-shadow: none;
+    }
+    50% {
+      box-shadow: 0 0 20px 5px var(--change2);
+    }
+  }
+  @keyframes glow-1 {
+    0%,
+    100% {
+      box-shadow: none;
+    }
+    50% {
+      box-shadow: 0 0 20px 5px var(--change1);
     }
   }
   

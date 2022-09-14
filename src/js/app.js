@@ -11,7 +11,7 @@ var len = circle.length;
 const addRow = (e) => {
   circles.innerHTML = ''
 
-  for(let i=0; i < document.getElementById('row_quantity').value; i++){
+  for(let i=1; i <=document.getElementById('row_quantity').value; i++){
     var newDiv = document.createElement('div');
     var newInput = document.createElement('input');
 
@@ -32,8 +32,8 @@ const changeColor = (i)=>{
    const ele = document.getElementById(`color${i}`);
    const pickerValue = document.getElementById(`picker${i}`).value;
    ele.style.background = pickerValue;
-   ele.style.animation = ` glow-4 1000ms infinite`;
-   root.style.setProperty('--change', pickerValue);
+   ele.style.animation = ` glow-${i} 1000ms infinite`;
+   root.style.setProperty(`--change${i}`, pickerValue);
    
 }
 const on = function() {
