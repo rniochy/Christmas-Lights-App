@@ -14,11 +14,16 @@ const addRow = (e) => {
     newInput.type = "color";
     newDiv.className = `circle color${i}`;
     newInput.className = `picker`;
-    newInput.setAttribute('onchange', `alert(${i})`);
+    newInput.setAttribute('onchange', `changeColor(${i})`);
     circles.appendChild(newDiv);
     newDiv.appendChild(newInput);
   }
     
+}
+
+const changeColor = (i)=>{
+   const ele = document.getElementsByClassName(`color${i}`)
+   ele.style.backgroundColor = 'red';
 }
 const on = function() {
   for (var i = 0; i < len; i++) {
