@@ -9,12 +9,12 @@ var len = circle.length;
 
 const addRow = (e) => {
   for(let i=1; i<=document.getElementById('row_quantity').value; i++){
-    var newNode = document.createElement('div');
+    var newDiv = document.createElement('div');
     var newInput = document.createElement('input');
     newInput.type = "color";
-    newNode.className = `circle color${i}`;
-    newInput.id = `color-chance${i}`;
-    circles.appendChild(newNode);
+    newDiv.className = `circle color${i}`;
+    newInput.className = `picker color-change${i}`;
+    circles.appendChild(newDiv);
     circles.appendChild(newInput);
   }
     

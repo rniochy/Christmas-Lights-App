@@ -155,9 +155,10 @@
     background-color: #2ecc71;
     animation: glow-4 1000ms infinite ;
   }
-  #color-chance1 {
-    height: 50px;
-    width: 300px;
+  .picker { 
+     position: absolute;
+     top: 6rem;
+     
   }
 
   @keyframes glow-1 {
