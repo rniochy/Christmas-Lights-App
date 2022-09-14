@@ -30,7 +30,8 @@ const addRow = (e) => {
 const changeColor = (i)=>{
    const ele = document.getElementById(`color${i}`);
    const pickerValue = document.getElementById(`picker${i}`).value;
-   ele.style.background = `${pickerValue}`;
+   ele.style.background = pickerValue;
+   ele.style.animation = ` 1000ms infinite` ;
 }
 const on = function() {
   for (var i = 0; i < len; i++) {
