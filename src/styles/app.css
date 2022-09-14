@@ -1,3 +1,7 @@
+:root {
+  --change: red;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -136,7 +140,7 @@
     border: none;
   }
   
-  .red {
+  /* .red {
     background-color: #c0392b;
     animation: glow-1 1s infinite;
   }
@@ -154,13 +158,13 @@
   .green {
     background-color: #2ecc71;
     animation: glow-4 1000ms infinite ;
-  }
+  } */
   .picker { 
      position: absolute;
      top: 4rem;
   }
 
-  @keyframes glow-1 {
+  /* @keyframes glow-1 {
     0%,
     100% {
       box-shadow: 0 0 20px 5px #c0392b;
@@ -188,7 +192,7 @@
     50% {
       box-shadow: none;
     }
-  }
+  } */
   
   @keyframes glow-4 {
     0%,
@@ -196,7 +200,7 @@
       box-shadow: none;
     }
     50% {
-      box-shadow: 0 0 20px 5px #2ecc71;
+      box-shadow: 0 0 20px 5px var(--change);
     }
   }
   

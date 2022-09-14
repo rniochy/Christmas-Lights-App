@@ -1,3 +1,4 @@
+const root = document.documentElement;
 const circle = document.getElementsByClassName('circle')
 const play = document.getElementById('play')
 const stop = document.getElementById('stop')
@@ -32,6 +33,7 @@ const changeColor = (i)=>{
    const pickerValue = document.getElementById(`picker${i}`).value;
    ele.style.background = pickerValue;
    ele.style.animation = ` glow-4 1000ms infinite`;
+   root.style.setProperty('--change', pickerValue);
    
 }
 const on = function() {
