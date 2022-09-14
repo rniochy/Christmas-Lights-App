@@ -8,13 +8,18 @@ const circles = document.getElementById('circle_content');
 var len = circle.length;
 
 const addRow = (e) => {
+  circles.innerHTML = ''
+
   for(let i=1; i<=document.getElementById('row_quantity').value; i++){
     var newDiv = document.createElement('div');
     var newInput = document.createElement('input');
+
     newInput.type = "color";
-    newDiv.className = `circle color${i}`;
-    newInput.className = `picker`;
+    newDiv.className = `circle color`;
+    newDiv.id = `color${i}`;
+    newInput.id = `picker`;
     newInput.setAttribute('onchange', `changeColor(${i})`);
+
     circles.appendChild(newDiv);
     newDiv.appendChild(newInput);
   }
@@ -22,8 +27,9 @@ const addRow = (e) => {
 }
 
 const changeColor = (i)=>{
-   const ele = document.getElementsByClassName(`color${i}`)
-   ele.style.backgroundColor = 'red';
+   const ele = document.getElementById(`color${i}`);
+   const pickerValue = document.getElementById(`picker`).value;
+   ele.style.background = pickerValue;
 }
 const on = function() {
   for (var i = 0; i < len; i++) {
